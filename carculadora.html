@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var operacion;
+    let result;
+    let valorUno;
+    let valorDos;
+    let repetir = 0;
+    while (repetir == 0) {
+      var operacion = parseInt(prompt('que operacion desea hacer: 1. sumar, 2. resta, 3. multi, 4 dividir', ''));
+      switch (operacion) {
+        case 1:
+          valorUno = parseInt(prompt('valor uno', ''));
+          valorDos = parseInt(prompt('valor dos', ''));
+          result = valorUno + valorDos;
+
+          break;
+        case 2:
+          valorUno = parseInt(prompt('valor uno', ''));
+          valorDos = parseInt(prompt('valor dos', ''));
+          result = valorUno - valorDos;
+
+          break;
+        case 3:
+          valorUno = parseInt(prompt('valor uno', ''));
+          valorDos = parseInt(prompt('valor dos', ''));
+          result = valorUno * valorDos;
+          break;
+        case 4:
+          valorUno = parseInt(prompt('valor uno', ''));
+          valorDos = parseInt(prompt('valor dos', ''));
+          result = valorUno / valorDos;
+          break;
+        default:
+          alert('tienes que escojer alguna de las opciones')
+          break;
+      }
+      if ((operacion == 1) || (operacion == 2) || (operacion == 3) || (operacion == 4)) {
+        repetir = 1;
+      } else {
+        repetir = 0;
+      }
+    }
+    alert(result);
+
+  </script>
+</body>
+
+</html>
