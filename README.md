@@ -1,2 +1,0 @@
-# empezando-javascript
-javascript
